@@ -1,0 +1,53 @@
+
+Cassandra Deatherage
+CS 163 Fall 2019
+
+Program # 5 Efficiency Write Up
+
+1. How well did the data structure selected perform for the assigned application?
+
+The data structure assigned worked very well for the assigned application. Storing the data just at the index created 
+a clear understanding of the fact that I was only passing pointers, so for me this data structure made complete sense. 
+In my program I created 3 structures and just one class. Again in my design I tried to keep things as simple as possible 
+so that I could focus on the behavior of the data structure and the heirarchy of access. 
+
+2. Would a different data structure work better? If so, which one and why?
+
+I can't imagine so, if I'm building a flexible list I'm going to need the flexibility of adding and or/ removing so node 
+pointers help to accomplish that. Having an array provides the direct access necessary to cut down on the memory overhead
+if I know what I want to access next. 
+
+3. What was efficient about your design and use of the data structure?
+
+This time I focused completely on emulating the code that I had already worked out in lab. I basically copy and pasted almost all 
+of the functions I had worked on, before trying to figure out what gaps I needed to fill in. I was able to avoid using a copy function
+to do a double deep copy from main, by passing in the argument into my constructor, which saved me a lot of code. I created the required 
+display adjacent (or display the remaining path function) but I also wanted to create a function that displayed everything in each index
+so that the grader /or user could check to see what was stored in each index. 
+
+I also created a read in file so that the grader/user could do some basic error checking without having too much trouble with 
+accidental errors as I had a few times.(You may thank me with extra points if you want!!) - really I'm just trying to grasp for 
+more words.. But, realistically, I feel that by keeping my overall application design extremely simple the data structure was 
+used appropriately and without unecessary complication. 
+
+4. What was not efficient?
+
+okay this time I feel like the simplicity of this program overall leant itself to pretty effective efficiency, but 
+if not, please let me know in the comments!
+
+
+5. What would you do differently if you had more time to solve the problem?
+
+It is important to me when testing a program to think about how easy it is for the user/ or grader to understand what they
+are being asked for and what the function is producing. Even right now as I am writin this, I realize that I forgot to 
+catch a negative value for my insert in main to let the user know that the array is full. *OOPS* But if I had more time that is 
+the kind of thing that I would go back and correct. I also spent a little time talking to the TCSS about how to implement a 
+breadth vs depth search and the overall feedback that I got was that breadth was probably what was meant in the prompt(not depth), but 
+also that in order to implement a breadth first search I would have to create another class, and a queue and possibly the functionality 
+of a stack, and the explanation in itself sounded like another program altogether, so I decided in the interest of time (and finals)
+not to venture down that rabbit hole this time. But I am interested in learning more about it, if I had more time I would probably 
+focus on learning how to apply that adt concept to my program, but possibly in as streamlined a manner as possible. 
+
+
+
+

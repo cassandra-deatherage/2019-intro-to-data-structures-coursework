@@ -1,0 +1,4 @@
+cozy|hillsdale|350|1|10
+sunny loft|nob hill|525|1|3
+tight squeeze|downtown|200|0|1
+dark & dreary|north east|275|1|4

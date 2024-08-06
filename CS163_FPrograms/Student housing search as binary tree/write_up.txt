@@ -1,0 +1,59 @@
+						Cassandra Deatherage
+				CS 163 Fall 2019
+			
+
+Efficiency Write Up for Program #2
+
+1.	How well did the data structure selected perform for the assigned application?
+	
+	I think that the tree worked pretty well overall for the application of the program. 
+    Being able to display in an organized way based on the value of the data made more sense
+    to me than just displaying in the stored order, and offered more 
+    variations for error checking as well. Another benefit of doing things with the tree meant that 
+    moving or shifting data didn't involve as much problem as with trying to find data in
+    a hash table and removing afterword. This process seemed more fluid and intuitive.
+    
+2.	Would a different data structure work better? If so, which one and why?
+	
+    No, I don't think so. From the data structures I've learned so far this seems to be 
+    the best option for storing random data based on the value.
+
+3.	What was efficient about your design and use of the data structure?
+
+    Since I was building this program off of my last program, I used the same format
+    to design my abstract data types. Instead of creating another class, 
+    and with it multiple functions to use on the data, I just used one class 
+    and two structs to house my data. All of the data for the house I stored into a struct, 
+    and I passed an object of that struct into the node object, which allowed me to build a 
+    list without giving the client access to my data structure. 
+    
+    This program really helped me see how encapsulated functions can help relieve extra work 
+    later on. I was able to use several functions from my previous program to help remove some of the
+    extra data copying and reading in from text files. I did update my text file so that the data 
+    would insert into a full balanced tree so that testing would be easier. I was able to check 
+    that my display was working in order properly and that created a good basis for building the 
+    rest of the program. 
+
+    I did have some difficulty with the logic behind comparing the value of two strings, and since 
+    it was especially important in this program, I sought help from a few different tutors to clarify
+    but there was a little bit of confusion about what was returned from that function exactly, so
+    I had to do a little trial and error. At one point I got stuck on my remove function because
+    I was searching the wrong side of the tree! 
+
+    I was especially happy with the implementation of the remove function because I was trying 
+    to seperate the recursive calls with their specific conditions from the actual removal 
+    portion of the program. 
+
+    I was able to implement the is_efficient function using the height function to check the difference,
+    which let me know if there was a difference of more than 1 in any of my levels, then the tree was not
+    balanced efficiently, I intentionally made it a balanced tree with my text file, so that was also 
+    something that helped me understand if the function was working properly.. Although I did not have
+    time to test by moving things around in the text file.
+
+
+	4. What was not efficient?
+    My search by name function was left incomplete.. I needed to store the data in an array instead of in 
+    an object, but I ran out of time so I couldn't complete that. 
+
+    5.	What would you do differently if you had more time to solve the problem?
+    Finish the search by name function, and test with different read in text files.
